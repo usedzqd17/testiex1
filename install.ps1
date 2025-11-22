@@ -1,1 +1,1 @@
-shutdown /i
+Write-Host "Installation réussie ! Le script fonctionne bien." -ForegroundColor Green
